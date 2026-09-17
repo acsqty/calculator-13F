@@ -1,8 +1,10 @@
-import React from 'react'
+import type { ModeSwitchType } from "../App"
 
-const ThreeStateSwitch = () => {
+const ThreeStateSwitch = ({mode,nextMode}:ModeSwitchType) => {
   return (
-    <div>ThreeStateSwitch</div>
+    <div>
+      <button onClick={nextMode}>KATTINTS - {mode}</button>
+    </div>
   )
 }
 
